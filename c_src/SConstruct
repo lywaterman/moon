@@ -1,0 +1,4 @@
+SharedLibrary('moon_nif', Glob('*.cpp') + Glob('pbc/*.c'),
+			LIBS=['erl_interface', 'ei', 'luajit-5.1', 'boost_thread', 'cjson'],
+			LIBPATH='/usr/local/lib/erlang/lib/erl_interface-3.7.8/lib/:/usr/local/lib/:/usr/lib/',
+			CPPPATH='/usr/local/lib/erlang/lib/erl_interface-3.7.8/include/:/usr/include/:/usr/local/include/:/usr/local/lib/erlang/usr/include/')
